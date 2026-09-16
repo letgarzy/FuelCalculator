@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutResultado"
+    android:background="@color/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultadoActivity">
+
+    <LinearLayout
+        android:id="@+id/llResultadoCabecalho"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@drawable/bg_rounded"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <TextView
+            android:id="@+id/tvPrecoViagem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#F1F8F4"
+            android:text="R$ 250.00"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Revisão dados inseridos"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llResultadoCabecalho" />
+
+    <TextView
+        android:id="@+id/tvPreco"
+        android:layout_width="78dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="32dp"
+        android:text="R$ 5.0"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvPrecoLabel"
+        app:layout_constraintTop_toBottomOf="@+id/tvLabel" />
+
+    <TextView
+        android:id="@+id/tvPrecoLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Preço"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/tvPreco"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLabel" />
+
+    <TextView
+        android:id="@+id/tvConsumoLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Consumo"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvPrecoLabel"
+        app:layout_constraintTop_toBottomOf="@+id/tvPrecoLabel" />
+
+    <TextView
+        android:id="@+id/tvResultadoConsumo"
+        android:layout_width="63dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="32dp"
+        android:text="12"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/tvPreco"
+        app:layout_constraintTop_toBottomOf="@+id/tvPreco" />
+
+    <TextView
+        android:id="@+id/tvDistanciaLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Distância"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvConsumoLabel"
+        app:layout_constraintTop_toBottomOf="@+id/tvConsumoLabel" />
+
+    <TextView
+        android:id="@+id/tvResultadoDistancia"
+        android:layout_width="71dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="32dp"
+        android:text="600km"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/tvResultadoConsumo"
+        app:layout_constraintTop_toBottomOf="@+id/tvResultadoConsumo" />
+
+    <Button
+        android:id="@+id/btnResultadoNovo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="48dp"
+        android:backgroundTint="#198754"
+        android:text="Calcular novamente"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+/>
+
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar_resultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F1F8F4"
+        android:minHeight="?attr/actionBarSize"
+        app:title=" "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
